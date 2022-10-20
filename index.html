@@ -5,10 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css" type="text/css"> 
-  <script src="./js/scripts.js"></script>
+  <script src="./js/scripts2.js"></script>
   <title>Calculator</title>
 </head>
 <body>
   <h1>Calculator</h1>
+  <!-- calculator form -->
+  <form id="calculator">
+    <label for="input1">1st Number:</label>
+    <input id="input1" type="text">
+    <label for="input2">2nd Number:</label>
+    <input id="input2" type="text">
+
+    <label>
+      <input type="radio" name="operator" value="add" checked>
+      Add
+    </label>
+    <label>
+      <input type="radio" name="operator" value="subtract">
+      Subtract
+    </label>
+    <label>
+      <input type="radio" name="operator" value="multiply">
+      Multiply
+    </label>
+    <label>
+      <input type="radio" name="operator" value="divide"> 
+      Divide
+    </label>
+
+    <button type="submit" class="btn">Calculate this!</button>
+  </form>
+
+  <h2>Results:</h2>
+  <p id="output"></p>
 </body>
 </html>
